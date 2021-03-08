@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "like-icons": "/components/likeIcons/likeIcons"
+  },
+  "component": true
+}

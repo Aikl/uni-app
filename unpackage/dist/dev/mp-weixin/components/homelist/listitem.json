@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "listscroll": "/components/listscroll/listscroll",
+    "listcard": "/components/listcard/listcard",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  },
+  "component": true
+}

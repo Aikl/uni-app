@@ -1,0 +1,93 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "uni-app",
+				"navigationBarTextStyle":"white"
+			}
+		}
+	    ,{
+            "path" : "pages/tabbar/follow/follow",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabbar/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search-reulst/search-reulst",
+            "style" :                                                                                    
+            {
+               "navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/label/label",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "标签管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home-detail/home-detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "内容详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#666",
+		"selectedColor":"#f07373",
+		"backgroundColor":"#fff",
+		"list":[{
+			"pagePath":"pages/tabbar/index/index",
+			"iconPath":"static/icon/home.png",
+			"selectedIconPath":"static/icon/home-active.png",
+			"text":"首页"
+		},{
+			"pagePath":"pages/tabbar/follow/follow",
+			"iconPath":"static/icon/follow.png",
+			"selectedIconPath":"static/icon/follow-active.png",
+			"text":"收藏"
+		},{
+			"pagePath":"pages/tabbar/my/my",
+			"iconPath":"static/icon/my.png",
+			"selectedIconPath":"static/icon/my-active.png",
+			"text":"我的"
+		}]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
